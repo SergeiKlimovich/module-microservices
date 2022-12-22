@@ -1,0 +1,7 @@
+FROM openjdk:8
+
+COPY ./target/first-service-0.0.1-SNAPSHOT.jar first-service.jar
+
+CMD ["java", "-jar", "first-service.jar"]
+
+EXPOSE 8081
