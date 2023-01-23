@@ -1,0 +1,7 @@
+FROM openjdk:8
+
+COPY ./target/second-service-0.0.1-SNAPSHOT.jar second-service.jar
+
+CMD ["java", "-jar", "second-service.jar"]
+
+EXPOSE 8082
